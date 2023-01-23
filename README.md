@@ -13,9 +13,13 @@
 
 ### Visão Geral
 > Banco de dados utilizado Mysql;
+
 > Django Rest Framework foi o framework utilizado para contruir a API;
+
 > As operações que a API utiliza são: GET, POST, PUT e DELETE;
+
 > Consula de cliente por chave id, CPF e Nome;
+
 > Para cadastrar ou atualizar os valores da API, foi utilizado a API viaCep para válidar o CEP do cliente;
 
 

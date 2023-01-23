@@ -20,7 +20,7 @@
 
 
 ### Validações por Campos
-##### **`Nome Completo`**
+##### **Nome Completo**
 > Criado um arquivo específico para validações.
 
 * É removido todos os espaços do nome e após isso é validado quantos caracteres existem, se tiver menos que 12 é informado.
@@ -32,7 +32,7 @@
 * No final das validações o nome é formatado, deixando todas as primeiras letras maíusculas e retorna o valor.
 
 
-##### **`CPF`**
+##### **CPF**
 > Criado um arquivo específico para validações.
 
 * Utilizado a biblioteca CPFField para validação no models.
@@ -44,7 +44,7 @@
 * Valida se existe 11 dígitos.
 
 
-##### **`Telefone`**
+##### **Telefone**
 > Criado um arquivo específico para validações.
 
 * Verifica se o telefone tem algum dos seguintes caracteres: ( ) - + e 'espaço', caso tenha, é removido formatando o telefone.
@@ -54,7 +54,7 @@
 * Valida se o número de caracteres é maior que 8 e menor que 13.
 
 
-##### **`CEP`** **`Estado`** **`Cidade`** **`Logradouro`**
+##### **CEP** **Estado** **Cidade** **Logradouro**
 > Criado um arquivo específico para validações.
 
 * `Estado e Cidade :` Usado a função request, é validado primeiro o estado e a cidade, inserido o valor na requisição https://.../RS/... para pegar todas as cidades relacionadas ao estado após isso, foi utilizado a bibliote pantas para filtrar apenas as cidades, criado uma coluna. Após isso é percorrido cada nome das cidades e comparado com o nome que foi enviado (cidade), caso encontre a cidade, saí do for, se não, informa que não encontrou a cidade no estado.

@@ -44,7 +44,7 @@ def validando_cep(cep, cidade, estado, logradouro):
         apenas_numeros_valor('CEP', cep)
 
     cep_caracteres = len(str(cep))
-    # Verificar se a númeração está entre 8 e 13 o padrão (0000 0000) até (00)
+    # Verificar se a númeração está entre 8 
     if cep_caracteres != 8:
         quantidade_caracteres(8, 'CEP', cep_caracteres)
 

@@ -14,7 +14,7 @@ def validando_cpf(cpf):
         apenas_numeros_valor('CPF', cpf)
 
     cpf_caracteres = len(str(cpf))
-    # Verificar se a númeração está entre 8 e 13 o padrão (0000 0000) até (00)
+    # Verificar se a númeração é 11
     if cpf_caracteres != 11:
         quantidade_caracteres(11, 'CPF', cpf_caracteres)
 
